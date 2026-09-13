@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.betterarrows.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"AbstractArrowImpactMixin",
+		"AbstractArrowMixin",
+		"LivingEntityArrowCountMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

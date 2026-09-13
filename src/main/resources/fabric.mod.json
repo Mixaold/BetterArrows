@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "betterarrows",
+	"version": "${version}",
+	"name": "Better Arrows",
+	"description": "Stuck arrows render exactly where they hit and follow the correct bone during animation, instead of vanilla's pseudo-random placement.",
+	"authors": [
+		"Mixaold"
+	],
+	"contact": {
+		"sources": "https://github.com/Mixaold/BetterArrows",
+		"issues": "https://github.com/Mixaold/BetterArrows/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/betterarrows/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.betterarrows.BetterArrowsMod"
+		],
+		"client": [
+			"net.betterarrows.client.BetterArrowsModClient"
+		],
+		"modmenu": [
+			"net.betterarrows.client.config.BetterArrowsModMenu"
+		]
+	},
+	"mixins": [
+		"betterarrows.mixins.json",
+		{
+			"config": "betterarrows.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"cloth-config": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

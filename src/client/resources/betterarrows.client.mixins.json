@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "net.betterarrows.client.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ArrowLayerMixin",
+		"LevelRendererSubmitEntitiesMixin",
+		"LivingEntityRenderStateMixin",
+		"LivingEntityRendererExtractStateMixin",
+		"ModelPartAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
