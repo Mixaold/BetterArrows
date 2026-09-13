@@ -7,8 +7,8 @@ bend with the leg. Vanilla just counts how many arrows are in you and re-rolls a
 random body part every single frame: you nail a zombie in the head, and the arrow turns up in its
 leg. And on mobs vanilla doesn't draw them at all.
 
-Blocks push back too. Shoot flat and it skips off stone; off wood you have to come in twice as flat.
-Sand swallows the arrow unless it hits almost sideways. Wool, mud and snow never bounce it, ever.
+What you shoot at matters too. Graze stone and the arrow skips off; off wood you have to come in
+twice as flat. Sand swallows it unless it hits almost sideways. Wool, mud and snow never bounce it, ever.
 The steeper the hit, the more speed stays in the block. On ice the arrow slides along the surface
 instead of getting kicked off it like glass. And every material has its own hit sound and its own
 spray of debris.
@@ -49,8 +49,8 @@ the real hit point.
 каждый кадр заново кидает кубик: случайное место на случайной части тела. Всадил зомби в голову —
 глядь, стрела в ноге. А на мобах ваниль их и вовсе не рисует.
 
-Блоки тоже не молчат. Стрельни по камню вскользь, почти вдоль стены — стрела чиркнёт и улетит
-дальше. С деревом так же, только стрелять надо ещё ровнее. Песок стрелу проглотит, если она пришла не
+Важно и то, во что ты стреляешь. Стрельни по камню вскользь, почти вдоль стены — стрела чиркнёт и
+улетит дальше. С деревом так же, только стрелять надо ещё ровнее. Песок стрелу проглотит, если она пришла не
 совсем уж плашмя. Шерсть, грязь и снег не отбрасывают её вообще никогда. Чем прямее попал, тем
 сильнее стрела вязнет в блоке. По льду она едет вдоль поверхности, а не отскакивает, как от стекла.
 И у каждого материала свой звук удара и своя крошка.

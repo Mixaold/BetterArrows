@@ -38,53 +38,34 @@ bend with the leg. Vanilla just counts how many arrows are in you and re-rolls a
 random body part every single frame: you nail a zombie in the head, and the arrow turns up in its
 leg. And on mobs vanilla doesn't draw them at all.
 
-Blocks push back too. Shoot flat and it skips off stone; off wood you have to come in twice as flat.
-Sand swallows the arrow unless it hits almost sideways. Wool, mud and snow never bounce it, ever.
-The steeper the hit, the more speed stays in the block. On ice the arrow slides along the surface
-instead of getting kicked off it like glass. And every material has its own hit sound and its own
-spray of debris.
+What you shoot at matters too. Graze stone and the arrow skips off; off wood you have to come in
+twice as flat. Sand swallows it unless it hits almost sideways. Wool, mud and snow never bounce it,
+ever. The steeper the hit, the more speed stays in the block. On ice the arrow slides along the
+surface instead of getting kicked off it like glass. And every material has its own hit sound and
+its own spray of debris.
 
-### What a flat shot does
-
-| Surface | What happens |
+| What you shoot | What happens |
 |---|---|
-| Stone, metal, glass, deepslate | Skips off, even from a fairly steep angle |
-| Wood, bamboo, ladders | Skips off, but you have to shoot twice as flat |
-| Sand, gravel, dirt | Only a sliver near flat — anything steeper is swallowed |
-| Wool, mud, snow, slime, cobweb | Never bounces. The arrow sticks |
-| Ice | Slides *along* the surface, slowing as it goes |
-| Leaves | Vanilla: the arrow just stands in the canopy |
+| Stone, metal, glass, deepslate | Skips off, even from a fairly straight hit |
+| Wood, bamboo, ladders | Skips off too, but you have to shoot flatter |
+| Sand, gravel, dirt | Only if it came in razor flat — any straighter and it's swallowed |
+| Wool, mud, snow, slime, cobweb | Never bounces, the arrow just sticks |
+| Ice | Doesn't bounce — slides along and slowly stops |
+| Leaves | Like vanilla: the arrow just stands in them |
 
-### Where the arrow ends up
+Works on players and on any mob, including mobs from other mods. Rejoin and the arrows are still
+there, and other players see them too.
 
-* **The exact point** — the mod grabs the 3D hit point vanilla computes on impact and then throws away.
-* **The right limb** — the arrow belongs to the body part it hit and moves with it.
-* **The real angle** — taken from the arrow's flight direction, not guessed.
-* **Everyone** — players and mobs, vanilla and modded. No arrows on endermen, same as vanilla.
-* **Still there after a rejoin**, and a player who joins later sees them too.
-* They work their way out over time, the way vanilla's arrow count decays.
-
-### Settings
-
-**Mod Menu → Better Arrows.** Every part above can be switched off on its own. On a server the
-server's file decides the gameplay half — ricochet, ice, sounds, debris — and each client's file
-decides the drawing half.
+**Settings: Mod Menu → Better Arrows.** Anything can be switched off on its own.
 
 > ### ⚠️ Install it on the client AND the server
-> Same version on both sides. Nothing crashes if they differ — the mod just quietly does nothing,
-> which is harder to notice. If a friend sees no arrows, they've got a different version.
-
-Resource packs that replace entity models (Fresh Animations through Entity Model Features) work, but
-on a heavily reshaped model the odd arrow will be missing rather than misplaced — the mod would
-rather draw nothing than guess.
-
-### Requires
+> Same version on both sides. Nothing crashes if they differ — the mod just quietly does nothing.
+> If a friend sees no arrows, they've got a different version.
 
 Fabric · Minecraft 26.2 · Fabric API · Cloth Config · Mod Menu (optional, for the settings button)
 
-MIT license — use it, fork it, put it in your modpack. Mobs getting visible stuck arrows at all was
-first done by [Arrow In The Knee](https://modrinth.com/mod/aitk), with vanilla's random placement;
-this one tracks the real hit point.
+MIT — use it, fork it, put it in your modpack. Arrows on mobs at all were first done by
+[Arrow In The Knee](https://modrinth.com/mod/aitk), just not where you actually hit.
 
 ---
 ---
@@ -98,50 +79,31 @@ this one tracks the real hit point.
 каждый кадр заново кидает кубик: случайное место на случайной части тела. Всадил зомби в голову —
 глядь, стрела в ноге. А на мобах ваниль их и вовсе не рисует.
 
-Блоки тоже не молчат. Стрельни по камню вскользь, почти вдоль стены — стрела чиркнёт и улетит
-дальше. С деревом так же, только стрелять надо ещё ровнее. Песок стрелу проглотит, если она пришла не
-совсем уж плашмя. Шерсть, грязь и снег не отбрасывают её вообще никогда. Чем прямее попал, тем
-сильнее стрела вязнет в блоке. По льду она едет вдоль поверхности, а не отскакивает, как от стекла.
-И у каждого материала свой звук удара и своя крошка.
-
-### Что будет, если стрела чиркнёт по блоку
+Важно и то, во что ты стреляешь. Стрельни по камню вскользь, почти вдоль стены — стрела чиркнёт и
+улетит дальше. С деревом так же, только стрелять надо ещё ровнее. Песок стрелу проглотит, если она
+пришла не совсем уж плашмя. Шерсть, грязь и снег не отбрасывают её вообще никогда. Чем прямее попал,
+тем сильнее стрела вязнет в блоке. По льду она едет вдоль поверхности, а не отскакивает, как от
+стекла. И у каждого материала свой звук удара и своя крошка.
 
 | По чему стреляешь | Что будет |
 |---|---|
 | Камень, металл, стекло, глубинный сланец | Отскочит, даже если попал довольно прямо |
-| Дерево, бамбук, лестницы | Тоже отскочит, но стрелять надо ровнее, почти вдоль |
+| Дерево, бамбук, лестницы | Тоже отскочит, но стрелять надо ровнее |
 | Песок, гравий, земля | Отскочит, только если прошла впритирку. Чуть прямее — проглотит |
 | Шерсть, грязь, снег, слизь, паутина | Не отскакивает никогда, стрела просто втыкается |
 | Лёд | Не отскакивает, а едет по льду и постепенно тормозит |
 | Листва | Как в обычной игре: стрела торчит в листьях |
 
-### Куда воткнётся стрела
+Работает на игроках и на любых мобах, хоть из других модов. Перезашёл — стрелы на месте, и другие
+игроки их тоже видят.
 
-* **Ровно туда, куда попал.** Игра сама считает место удара, а потом выбрасывает его — мод его забирает себе.
-* **В ту самую руку или ногу**, в которую вошла. Рука двигается — стрела с ней.
-* **Под тем углом, под которым летела**, а не под каким попало.
-* **В кого угодно** — в игроков и в мобов, хоть из ванили, хоть из другого мода. В эндермене стрел не будет, как и в обычной игре.
-* **Перезашёл — стрелы на месте.** И друг, который зашёл позже, их тоже увидит.
-* Со временем сами вылезают и пропадают, как и в обычной игре.
-
-### Настройки
-
-**Mod Menu → Better Arrows.** Что угодно можно выключить по отдельности. На сервере за отскоки, лёд,
-звуки и крошку отвечают настройки сервера, а за то, как стрелы нарисованы, — настройки каждого
-игрока.
+**Настройки: Mod Menu → Better Arrows.** Что угодно можно выключить по отдельности.
 
 > ### ⚠️ Ставить и на клиент, и на сервер
 > Версия одна и та же с обеих сторон. Ничего не упадёт, если они разные, — мод просто молча ничего
-> не сделает, что заметить сложнее. Если друг не видит стрел, у него другая версия.
-
-Ресурспаки, которые меняют модели мобов (Fresh Animations через Entity Model Features), работают. Но
-если модель перекроена сильно, какая-нибудь стрела может вообще не появиться: мод лучше не нарисует
-ничего, чем воткнёт её мимо.
-
-### Требуется
+> не сделает. Если друг не видит стрел, у него другая версия.
 
 Fabric · Minecraft 26.2 · Fabric API · Cloth Config · Mod Menu (по желанию, ради кнопки настроек)
 
 Лицензия MIT — пользуйтесь, форкайте, кладите в сборки. Стрелы на мобах вообще первым показал
-[Arrow In The Knee](https://modrinth.com/mod/aitk) — правда, куда попало; этот мод втыкает их туда,
-куда ты попал.
+[Arrow In The Knee](https://modrinth.com/mod/aitk) — правда, куда попало.
