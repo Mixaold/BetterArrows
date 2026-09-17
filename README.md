@@ -29,7 +29,7 @@ leg. And on mobs vanilla doesn't draw them at all.
 Works on players and on any mob, including mobs from other mods. Rejoin and the arrows are still
 there, and other players see them too.
 
-## Blocks answer back
+## Blocks react too
 
 What you shoot at matters too. The steeper the hit, the more speed stays in the block. Every material
 has its own hit sound and its own spray of debris.
@@ -88,7 +88,7 @@ the real hit point.
 Работает на игроках и на любых мобах, хоть из других модов. Перезашёл — стрелы на месте, и другие
 игроки их тоже видят.
 
-### Блоки отвечают
+### Блоки тоже реагируют
 
 Важно и то, во что ты стреляешь. Чем прямее попал, тем сильнее стрела вязнет в блоке. У каждого
 материала свой звук удара и своя крошка.
